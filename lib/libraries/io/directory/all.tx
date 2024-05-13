@@ -1,0 +1,16 @@
+Directory(String path)
+create({bool recursive = false}) - Creates the directory. If recursive is true, creates the directory and all necessary parent directories.
+delete({bool recursive = false}) - Deletes the directory. If recursive is true, deletes the directory and all its contents recursively.
+exists() - Checks whether the directory exists.
+list({bool recursive = false, bool followLinks = true}) - Returns a Stream of FileSystemEntity objects representing the contents of the directory. If recursive is true, lists all files and directories recursively. If followLinks is false, does not follow symbolic links.
+listSync({bool recursive = false, bool followLinks = true}) - Synchronously lists the contents of the directory. Similar to list() but returns a list instead of a stream.
+rename(String newPath) - Renames the directory.
+stat() - Retrieves the FileSystemEntity properties of the directory.
+watch({int events = FileSystemEvent.all, bool recursive = false}) - Returns a Stream of events for the directory, such as when files are added, removed, or modified.
+FileSystemEntity methods like absolute, parent, uri, etc.
+Properties:
+
+path - Returns the path of the directory.
+absolute - Returns the absolute path of the directory.
+parent - Returns the parent directory as a Directory object.
+uri - Returns the URI of the directory.

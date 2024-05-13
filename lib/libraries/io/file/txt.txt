@@ -1,0 +1,19 @@
+File(String path) - Constructor to create a File object with the specified path.
+create() - Creates the file.
+delete() - Deletes the file.
+exists() - Checks whether the file exists.
+readAsBytes() - Reads the entire file contents as a list of bytes.
+readAsString({Encoding encoding = utf8}) - Reads the entire file contents as a string.
+writeAsBytes(List<int> bytes, {FileMode mode = FileMode.write, bool flush = false}) - Writes the given bytes to the file.
+writeAsString(String contents, {FileMode mode = FileMode.write, Encoding encoding = utf8, bool flush = false}) - Writes the given string to the file.
+copy(String newPath) - Copies the file to the specified newPath.
+rename(String newPath) - Renames the file to the specified newPath.
+stat() - Retrieves the FileStat properties of the file.
+openRead() - Opens a Stream for reading from the file.
+openWrite({FileMode mode = FileMode.write, Encoding encoding = utf8}) - Opens a IOSink for writing to the file.
+Properties:
+
+path - Returns the path of the file.
+absolute - Returns the absolute path of the file.
+parent - Returns the parent directory as a Directory object.
+uri - Returns the URI of the file.

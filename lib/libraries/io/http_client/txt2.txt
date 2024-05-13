@@ -1,0 +1,35 @@
+add():
+Adds bytes to the body of the request.
+write():
+Writes a string to the request's body encoded in UTF-8.
+writeln():
+Writes a line to the request's body encoded in UTF-8.
+addStream():
+Adds a stream of bytes to the request's body.
+close():
+Closes the request body.
+flush():
+Flushes any buffered data in the request.
+abort():
+Aborts the request.
+Properties:
+contentLength:
+The content length of the request body.
+contentLength:
+The content type of the request body.
+headers:
+The headers of the request.
+method:
+The HTTP method of the request (GET, POST, PUT, etc.).
+persistentConnection:
+Whether the connection should be kept alive.
+uri:
+The URI of the request.
+followRedirects:
+Whether to automatically follow redirects.
+maxRedirects:
+The maximum number of redirects to follow.
+connectionTimeout:
+The timeout for establishing a connection.
+idleTimeout:
+The idle timeout for the connection.

@@ -1,0 +1,30 @@
+se()` - Closes the client, releasing associated resources.
+2. `get(String host, int port, String path)` - Sends an HTTP GET request to the specified host, port, and path.
+3. `getUrl(Uri url)` - Sends an HTTP GET request to the specified URL.
+4. `post(String host, int port, String path)` - Sends an HTTP POST request to the specified host, port, and path.
+5. `postUrl(Uri url)` - Sends an HTTP POST request to the specified URL.
+6. `head(String host, int port, String path)` - Sends an HTTP HEAD request to the specified host, port, and path.
+7. `headUrl(Uri url)` - Sends an HTTP HEAD request to the specified URL.
+8. `patch(String host, int port, String path)` - Sends an HTTP PATCH request to the specified host, port, and path.
+9. `patchUrl(Uri url)` - Sends an HTTP PATCH request to the specified URL.
+10. `put(String host, int port, String path)` - Sends an HTTP PUT request to the specified host, port, and path.
+11. `putUrl(Uri url)` - Sends an HTTP PUT request to the specified URL.
+12. `delete(String host, int port, String path)` - Sends an HTTP DELETE request to the specified host, port, and path.
+13. `deleteUrl(Uri url)` - Sends an HTTP DELETE request to the specified URL.
+14. `open(String method, String host, int port, String path)` - Opens a new HTTP connection using the specified method, host, port, and path.
+15. `openUrl(String method, Uri url)` - Opens a new HTTP connection using the specified method and URL.
+16. `addCredentials(Uri url, String realm, HttpClientCredentials credentials)` - Adds credentials for the specified URL and realm.
+17. `addProxyCredentials(String host, int port, String realm, HttpClientCredentials credentials)` - Adds proxy credentials for the specified host, port, and realm.
+
+**Properties:**
+
+1. `connectionTimeout` - The timeout for establishing a connection, specified as a `Duration`.
+2. `idleTimeout` - The timeout for keeping an idle connection open, specified as a `Duration`.
+3. `maxConnectionsPerHost` - The maximum number of connections allowed per host.
+4. `autoUncompress` - Indicates whether the client should automatically decompress response bodies.
+5. `badCertificateCallback` - A callback function that validates SSL certificates.
+6. `authenticate` - Indicates whether the client should automatically send HTTP authentication credentials.
+7. `findProxy` - A callback function that determines the proxy to use for a given URL.
+8. `secureSocketConnect` - A callback function that establishes a secure connection.
+9. `userAgent` - The value of the `User-Agent` header sent with requests.
+10. `proxyCredentials` - The default proxy credentials used by the client.
